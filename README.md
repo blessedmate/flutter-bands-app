@@ -1,16 +1,19 @@
-# flutter_band_apps
+# Flutter Bands App
 
-A new Flutter project.
+A Flutter mobile app that simulates a voting space for music bands, connected to a backend server using Socketio.
 
-## Getting Started
+## Description
 
-This project is a starting point for a Flutter application.
+This application has a main screen where a list of music bands are displayed. 
 
-A few resources to get you started if this is your first Flutter project:
+Users can add votes to the bands by tapping on them and these will be registered in the backend via socket communication. All votes are displayed in a pie chart. Users can also add a new band to the list.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+In case of a socket connection error, the top right icon will notify the user about the connectivity issue until its normal again.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Implemented packages
+
+Some of the most important packages used to build this app are:
+
+- socket_io_client: ^1.0.2
+- provider: ^6.0.1
+- pie_chart: ^5.1.0
